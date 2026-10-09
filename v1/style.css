@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    direction: rtl;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+    background-color: #c8102e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 50px auto;
+}
+
+section h2 {
+    text-align: center;
+
+    color: #c8102e;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Home
+========================= */
+
+#home {
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#home h2 {
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   Players
+========================= */
+
+.players-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   Player Card
+========================= */
+
+.player-card {
+    background-color: white;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   Player Image
+========================= */
+
+.player-card img {
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 10px auto 15px;
+
+    border-radius: 50%;
+
+    border: 4px solid #c8102e;
+}
+
+
+/* =========================
+   Player Name
+========================= */
+
+.player-card h3 {
+    color: #c8102e;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Player Information
+========================= */
+
+.player-card p {
+    font-size: 15px;
+
+    color: #555;
+
+    margin: 7px 0;
+}
+
+
+/* =========================
+   Goals
+========================= */
+
+.player-card .goals {
+    background-color: #198754;
+
+    color: white;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   Titles
+========================= */
+
+.player-card .titles {
+    background-color: #f0a500;
+
+    color: white;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   Legends
+========================= */
+
+#legends {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#legends ul {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+#legends li {
+    background-color: #c8102e;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+#legends li:hover {
+    background-color: #111;
+
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   Clubs
+========================= */
+
+#clubs {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#clubs ol {
+    width: 80%;
+
+    margin: auto;
+
+    font-size: 18px;
+
+    line-height: 2.3;
+}
+
+
+/* =========================
+   Countries
+========================= */
+
+#countries {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#countries ul {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+#countries li {
+    background-color: #222;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+#countries li:hover {
+    background-color: #c8102e;
+
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   About
+========================= */
+
+#about {
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 18px;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #111;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+
+/* الشاشات الكبيرة والمتوسطة */
+
+@media (max-width: 1100px) {
+
+    .players-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* التابلت */
+
+@media (max-width: 800px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .players-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #legends ul,
+    #countries ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* الموبايل */
+
+@media (max-width: 550px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    section {
+        width: 94%;
+
+        margin: 35px auto;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .players-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .player-card img {
+        width: 150px;
+
+        height: 150px;
+    }
+
+    #legends ul,
+    #countries ul {
+        grid-template-columns: 1fr;
+    }
+
+    #home {
+        padding: 25px;
+    }
+
+    #clubs ol {
+        width: 100%;
+    }
+
+}
+
+#search {
+    width: 300px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+#darkModeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
